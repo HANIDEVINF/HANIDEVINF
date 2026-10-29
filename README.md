@@ -38,7 +38,7 @@ I enjoy the engineering behind the model as much as the model itself: preparing 
 ### 🗣️ MuCAT — Multilingual Transformer
 **Research · NLP · Transformers**
 
-A multilingual text-classification research implementation using an mDeBERTa-v3 backbone with:
+A multilingual text-classification research prototype with custom attention, language-conditioning and evidential-head modules intended to sit above an mDeBERTa-v3 backbone:
 - Hierarchical Attention Pooling (HAP)
 - Language-aware FiLM conditioning
 - Evidential Dirichlet output head
@@ -46,7 +46,7 @@ A multilingual text-classification research implementation using an mDeBERTa-v3 
 
 Designed around MSA, Algerian Darija, Kabyle, Chaoui, French, and English.
 
-**Evaluation note:** the repository reports 98.20% test accuracy and includes a label-mapping correction. Review its split, baselines, and evaluation notes before interpreting the score.
+**Reproducibility note:** the repository currently exposes the custom head modules and research notes, but not the complete public training/evaluation pipeline needed to reproduce the reported table from a clean checkout. I have removed the headline accuracy claim until the experiment can be reproduced and checked end to end.
 
 [**Repository →**](https://github.com/HANIDEVINF/MUCAT-Multilingual-Transformer)
 
@@ -74,7 +74,7 @@ A 1D-CNN + Transformer model for MIT-BIH ECG beat classification, with a patient
 ### 🧭 LLM Evaluation Framework
 **LLMs · Evaluation · Developer Tools**
 
-An evolving project exploring structured evaluation for LLM-powered applications. The goal is to make evaluation criteria, comparisons, and results easier to inspect than a single impressive demo.
+A prototype with a deterministic four-case smoke-check runner and a frontend that uses illustrative preset candidate data. The runner does not call models or measure broad quality, latency, or cost; the current suite is a starting point, not a validated benchmark.
 
 See the repository for the functionality currently implemented and its reproduction instructions.
 
